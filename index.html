@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frete Fácil</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="card">
+
+            <header class="cabecalho">
+                
+
+                <h1>Frete Fácil</h1>
+
+                <p>
+                    Consulte o CEP e calcule uma estimativa de frete
+                    a partir da distância da UNINASSAU Parangaba.
+                </p>
+            </header>
+
+
+            <form id="freteForm">
+
+                <label for="cep">
+                    Digite o CEP do destino
+                </label>
+
+                <div class="campo-cep">
+
+                    <input
+                        type="text"
+                        id="cep"
+                        maxlength="9"
+                        placeholder="Ex.: 60710-000"
+                        autocomplete="postal-code"
+                        required
+                    >
+
+                    <button type="submit" id="btnCalcular">
+                        Calcular frete
+                    </button>
+
+                </div>
+
+                <p class="ajuda">
+                    Digite somente um CEP válido com 8 números.
+                </p>
+
+            </form>
+
+
+            <div id="mensagem" class="mensagem"></div>
+
+
+            <section id="resultado" class="resultado" hidden>
+
+                <h2>Resultado</h2>
+
+                <div class="dados">
+
+                    <div class="item">
+
+                        <span>Endereço</span>
+
+                        <strong id="endereco"></strong>
+
+                    </div>
+
+
+                    <div class="item">
+
+                        <span>Distância aproximada</span>
+
+                        <strong id="distancia"></strong>
+
+                    </div>
+
+
+                    <div class="item">
+
+                        <span>Estimativa Uber Moto</span>
+
+                        <strong id="uberMoto"></strong>
+
+                    </div>
+
+
+                    <div class="item destaque">
+
+                        <span>Preço estimado do frete</span>
+
+                        <strong id="frete"></strong>
+
+                    </div>
+
+                </div>
+
+
+            
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
