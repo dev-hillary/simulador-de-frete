@@ -6,6 +6,10 @@ Projeto acadêmico desenvolvido para a consulta de CEP e cálculo estimado de fr
 
 O sistema permite informar um CEP para consultar os dados do endereço, calcular a distância aproximada entre a UNINASSAU Parangaba e o destino e apresentar uma estimativa de valor para o frete.
 
+## 🔗 Acesso o projeto
+
+https://dev-hillary.github.io/simulador-de-frete/
+
 ## Funcionalidades
 
 * Consulta de CEP por API pública
